@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nick Benson's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/index.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="top-navbar">
+      <div class="nav-name">
+        <p>Nick Benson | Full-stack Developer</p>
+      </div>
+      <div class="nav-links">
+        <p>
+          <a href="#bio">About</a>
+        </p>
+        <p>
+          <a href="#projects-border">Projects</a>
+        </p>
+        <!-- Instead of 'Contact', could just have icons -->
+        <p>
+          <a href="https://www.linkedin.com/in/nick-benson-b99a58137" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="../images/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://github.com/N1ck-Benson" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="../images/GitHub_logo.png" alt="GitHub"></a>
+        </p>
+      </div>
+    </nav>
+
+    <!-- Section: Bio and Picture -->
+    
+    <section class="bio-section" id="bio">
+      <!-- bio -->
+      <article>
+        <!-- partial border above bio -->
+        <div class="bio-border-div"></div>
+        <p style="font-size: 1.4em;"><strong>Hi! I’m training to be a full-stack developer at <a href="https://northcoders.com/why-northcoders">Northcoders</a></strong>.</p>
+        <p style="font-size: 1.1em;">
+          Hi! I’m training to be a full-stack developer at Northcoders. I’m working mainly in Node.js, but primed to add new tech to my toolbelt and develop skills on both front- and back-end.
+        </p>
+        <p class="bio-small-paragraphs">
+          <em>
+            I first felt empowered by code during an MA in Linguistics, seeing languages like R and Python brought to the research I was passionate about. I tried a bit of R and no one got hurt, but I didn’t start taking tech seriously until my last job, where solving day-to-day problems with self-taught VBA became the best part of my day. I took a deep-dive into JavaScript, and haven’t looked back.
+          </em>
+        </p>
+        <p class="bio-small-paragraphs">
+          <em>
+            Easily inspired by anything new, I’m actively seeking opportunities to get stuck in with cutting-edge products. I’d love to bring my diverse skill set to an SME with exciting projects on the horizon, in any sector where technology is making a difference.
+        </em>
+        </p>
+      </article>
+      <!-- profile-pic -->
+        <img
+          src="../images/portfolioPic.JPG"
+          alt="profile picture"
+          class="profile-pic"
+          height="310em"
+        />
+    </section>
+
+    <!-- Section: Projects -->
+
+    <section class="projects-grid">
+      <div class="projects-border-left" id="projects-border"></div>
+      <div class="projects-border-right"></div>
+      <header class="projects-header">
+        <p style="padding-left: 2vw">Projects</p>
+      </header>
+      <main class="projects-main">
+        <article class="projects-article">
+          <figure class="project-picture-A">
+            <img src="../images/nc_news_snapshot.png" alt="NC News Snapshot" class="project-image-A">
+          </figure>
+          <aside>
+            <p class="project-text-A" style="font-size: 1.1em;">
+            <strong>Northcoders News API</strong>
+          </p>
+            <p class="project-text-A">
+              <em>My first fully-functioning backend project on the Northcoders bootcamp! An API serving news articles with nine useful endpoints. Soon to be expanded on frontend.</em>
+            </p>
+            <p class="project-text-A">
+              <em>
+                <a href="https://nc-news-database.herokuapp.com/api" target="_blank" rel="noopener noreferrer">Site</a>
+                <a href="https://github.com/N1ck-Benson/be-nc-news" target="_blank" rel="noopener noreferrer">Github</a>
+              </em>
+            </p>
+            <p class="project-text-A">
+              <strong>
+                <em>Built using Node.js, PostgreSQL and Knex</em>
+              </strong>
+            </p>
+          </aside>
+          
+        </article>
+        <article class="projects-article">
+          <figure class="project-picture-B">
+            <img src="../images/more-to-come.jpeg.png" alt="NC News Snapshot" class="project-image-B">
+          </figure>
+          <p class="project-text-B">
+            <!-- <em>more to come...</em> -->
+              <em>watch this space...</em>
+          </p>
+        </article>
+      </main>
+    </section>
+    <footer></footer>
+  </body>
+</html>
