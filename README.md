@@ -1,2 +1,2 @@
 # nick-benson-portfolio
-Starter portfolio site
+This is my portfolio site, where you can see the projects that are keeping me busy!
