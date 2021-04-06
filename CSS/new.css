@@ -27,7 +27,7 @@ body {
   flex: 0 0 375px;
   display: grid;
   grid-template-columns: 125px 250px;
-  grid-template-rows: 20vh 7vh 5vh 27vh 27vh 27vh 27vh;
+  grid-template-rows: 134px 46px 34px 180px 180px 180px 180px;
   margin: 0;
   background-color: #e1e2e2;
 }
@@ -51,24 +51,25 @@ body {
   margin: 0;
 }
 
+.summary-section {
+  grid-area: 1 / 1 / span 1 / span 2;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
 .profile-pic {
-  grid-area: 1 / 1 / span 1 / span 1;
   display: grid;
   align-content: center;
   justify-content: center;
 }
 
 .profile-pic > img {
-  height: 18vh;
+  width: 120px;
+  height: 120px;
 }
 
 .summary-text {
-  grid-area: 1 / 2 / span 1 / span 1;
-  display: grid;
-  align-content: center;
-}
-
-p {
   font-size: 0.8em;
   flex: 0 0 235px;
   height: 123px;
@@ -128,7 +129,7 @@ nav > a {
 }
 
 .project-card > p {
-  height: 15vh;
+  height: 65%;
   margin: 0;
   padding: 0 4px 0 4px;
   background-color: #b2b8c5;
@@ -140,11 +141,11 @@ nav > a {
 }
 
 .open-icon {
-  height: 2.25vh;
+  height: 10%;
 }
 
 .GitHub-image {
-  height: 2.5vh
+  height: 11%
 }
 
 .frontend-section {
@@ -195,14 +196,81 @@ nav > a {
   font-weight: 300;
 }
 
-/* @media screen and (min-width: 414) {
-  main
-} */
+/* Responsive behaviour */
 
-/* main {
-  display: grid;
-  grid-template-columns: 33vw 66vw;
-  grid-template-rows: 11vh 20vh 7vh 5vh 27vh 27vh 27vh 27vh;
-  margin: 0;
-  background-color: #e1e2e2;
-} */
+/* iPad */
+
+@media screen and (min-width:768px) {
+  .grid-container {
+    flex: 0 0 500px;
+    justify-content: space-between;
+  }
+  .backend-section {
+    justify-content: space-evenly;
+  }
+  .backend-section > h3 {
+    padding-right: 0;
+    width: 145px;
+  }
+  .frontend-section {
+    justify-content: space-evenly;
+  }
+  .frontend-section > h3 {
+    padding-right: 0;
+    width: 145px;
+  }
+  .fullstack-section {
+    justify-content: space-evenly;
+  }
+  .fullstack-section > h3 {
+    padding-right: 0;
+    width: 145px;
+  }
+  .journal-section {
+    justify-content: space-evenly;
+  }
+  .journal-section > h3 {
+    padding-right: 0;
+    width: 145px;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .grid-container {
+    grid-template-columns: 240px 125px 250px 240px;
+    grid-template-rows: 50px 46px 34px 180px 180px 180px 180px;
+  }
+  .summary-section {
+    grid-area: 2 / 1 / span 3 / span 1;
+    flex-direction: column;
+  }
+  .profile-pic {
+    justify-content: left;
+  }
+  .summary-text {
+    flex: 0 1 235px;
+    width: 75%;
+  }
+  .projects-header {
+  grid-area: 2 / 2 / span 1 / span 3;
+  }
+  nav {
+  grid-area: 3 / 2 / span 1 / span 3;
+  }
+  .backend-section {
+  grid-area: 4 / 2 / span 1 / span 3;
+  justify-content: space-around;
+  }
+  .frontend-section {
+  grid-area: 5 / 2 / span 1 / span 3;
+  justify-content: space-around;
+  }
+  .fullstack-section {
+  grid-area: 6 / 2 / span 1 / span 3;
+  justify-content: space-around;
+  }
+  .journal-section {
+  grid-area: 7 / 2 / span 1 / span 3;
+  justify-content: space-around;
+  }
+}
