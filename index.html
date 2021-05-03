@@ -2,112 +2,165 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Nick Benson's Portfolio</title>
     <link
       rel="stylesheet"
-      href="../fontawesome-free-5.12.1-web/css/all.min.css"
+      href="./CSS/index.css"
+      href="https://fonts.googleapis.com/css?family=Nunito"
     />
-    <link rel="stylesheet" href="./CSS/index.css" />
+    <title>Nick Benson's Portfolio</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav id="top-navbar">
-      <div class="nav-name">
-        <p>Nick Benson | Full-stack Developer</p>
-      </div>
-      <div class="nav-links">
-        <p>
-          <a href="#bio">About</a>
-        </p>
-        <p>
-          <a href="#projects-border">Projects</a>
-        </p>
-        <!-- Instead of 'Contact', could just have icons -->
-        <p>
-          <a href="https://www.linkedin.com/in/nick-benson-b99a58137" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="./images/linkedin.png" alt="LinkedIn"></a>
-          <a href="https://github.com/N1ck-Benson" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="./images/GitHub_logo.png" alt="GitHub"></a>
-        </p>
-      </div>
-    </nav>
-
-    <!-- Section: Bio and Picture -->
-    
-    <section class="bio-section" id="bio">
-      <!-- bio -->
-      <article>
-        <!-- partial border above bio -->
-        <div class="bio-border-div"></div>
-        <p style="font-size: 1.4em;"><strong>Hi! I’m training to be a full-stack developer at <a href="https://northcoders.com/why-northcoders">Northcoders</a></strong>.</p>
-        <p style="font-size: 1.1em;">
-          Hi! I’m training to be a full-stack developer at Northcoders. I’m working mainly in Node.js, but primed to add new tech to my toolbelt and develop skills on both front- and back-end.
-        </p>
-        <p class="bio-small-paragraphs">
-          <em>
-            I first felt empowered by code during an MA in Linguistics, seeing languages like R and Python brought to the research I was passionate about. I tried a bit of R and no one got hurt, but I didn’t start taking tech seriously until my last job, where solving day-to-day problems with self-taught VBA became the best part of my day. I took a deep-dive into JavaScript, and haven’t looked back.
-          </em>
-        </p>
-        <p class="bio-small-paragraphs">
-          <em>
-            Easily inspired by anything new, I’m actively seeking opportunities to get stuck in with cutting-edge products. I’d love to bring my diverse skill set to an SME with exciting projects on the horizon, in any sector where technology is making a difference.
-        </em>
-        </p>
-      </article>
-      <!-- profile-pic -->
-        <img
-          src="./images/portfolioPic.JPG"
-          alt="profile picture"
-          class="profile-pic"
-          height="310em"
-        />
-    </section>
-
-    <!-- Section: Projects -->
-
-    <section class="projects-grid">
-      <div class="projects-border-left" id="projects-border"></div>
-      <div class="projects-border-right"></div>
-      <header class="projects-header">
-        <p style="padding-left: 2vw">Projects</p>
+    <main class="flex-container">
+      <header class="top-header">
+        <h3>nick benson</h3>
+        <h2>FULL-STACK DEVELOPER</h2>
       </header>
-      <main class="projects-main">
-        <article class="projects-article">
-          <figure class="project-picture-A">
-            <img src="./images/nc_news_snapshot.png" alt="NC News Snapshot" class="project-image-A">
+      <main class="grid-container">
+        <section class="summary-section">
+          <figure class="profile-pic">
+            <img src="./images/portfolioPic round.png" alt="profilePic" />
           </figure>
-          <aside>
-            <p class="project-text-A" style="font-size: 1.1em;">
-            <strong>Northcoders News API</strong>
+          <p class="summary-text">
+            Hi! I recently graduated from the full-stack developer bootcamp at
+            <a
+              href="https://northcoders.com/why-northcoders"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Northcoders</a
+            >, and am actively seeking new opportunities.
+            <br />
+            I’m working mainly in Node.js, but primed to add new tech to my
+            toolbelt and develop skills on both front- and back-end. Find me on
+            <a
+              href="https://www.linkedin.com/in/nick-benson-b99a58137"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            and
+            <a
+              href="https://github.com/N1ck-Benson"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >.
           </p>
-            <p class="project-text-A">
-              <em>My first fully-functioning backend project on the Northcoders bootcamp! An API serving news articles with nine useful endpoints. Soon to be expanded on frontend.</em>
+        </section>
+        <header class="projects-header">
+          <h2>Projects</h2>
+        </header>
+        <section class="backend-section">
+          <h3>BACKEND</h3>
+          <figure class="project-card">
+            <h4>NC News API</h4>
+            <p>
+              My first fully-functioning backend project! An API serving news
+              articles with nine useful endpoints. Soon to be expanded on
+              frontend... Working in Node.js, Express, PSQL & Knex
             </p>
-            <p class="project-text-A">
-              <em>
-                <a href="https://nc-news-database.herokuapp.com/api" target="_blank" rel="noopener noreferrer">Site</a>
-                <a href="https://github.com/N1ck-Benson/be-nc-news" target="_blank" rel="noopener noreferrer">Github</a>
-              </em>
-            </p>
-            <p class="project-text-A">
-              <strong>
-                <em>Built using Node.js, PostgreSQL and Knex</em>
-              </strong>
-            </p>
-          </aside>
-          
-        </article>
-        <article class="projects-article">
-          <figure class="project-picture-B">
-            <img src="./images/more-to-come.jpeg.png" alt="NC News Snapshot" class="project-image-B">
+            <a
+              href="https://nc-news-database.herokuapp.com/api"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="open-icon"
+                src="./images/open_icon-icons.com_72303.png"
+                alt="Site"
+              />
+            </a>
+            <a
+              href="https://github.com/N1ck-Benson/be-nc-news"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="GitHub-image"
+                src="./images/GitHub_logo.png"
+                alt="GitHub"
+              />
+            </a>
           </figure>
-          <p class="project-text-B">
-            <!-- <em>more to come...</em> -->
-              <em>watch this space...</em>
-          </p>
-        </article>
+        </section>
+        <section class="frontend-section">
+          <h3>FRONTEND</h3>
+          <figure class="project-card">
+            <h4>Blurble App</h4>
+            <p>
+              I worked in a team on this platform for hosting book clubs, using
+              React Native. Blurble lets book clubs read together virtually, and
+              lets readers build communities around books they love.
+            </p>
+            <a
+              href="https://github.com/N1ck-Benson/Blurble"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="GitHub-image"
+                src="./images/GitHub_logo.png"
+                alt="GitHub"
+              />
+            </a>
+          </figure>
+          <figure class="project-card">
+            <h4>Portfolio site</h4>
+            <p>
+              My portfolio is a space where I'm learning the ins and outs of
+              HTML and CSS. See my progress on GitHub and in the Journal section
+              below.
+            </p>
+            <a
+              href="https://github.com/N1ck-Benson/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="GitHub-image"
+                src="./images/GitHub_logo.png"
+                alt="GitHub"
+              />
+            </a>
+          </figure>
+        </section>
+        <section class="fullstack-section">
+          <h3>FULL-STACK</h3>
+          <figure class="project-card">
+            <h4>Title of project</h4>
+            <p>Details</p>
+            <a href="..." target="_blank" rel="noopener noreferrer">
+              <img
+                class="open-icon"
+                src="./images/open_icon-icons.com_72303.png"
+                alt="Site"
+              />
+            </a>
+            <a href="...">
+              <img
+                class="GitHub-image"
+                src="./images/GitHub_logo.png"
+                alt="GitHub"
+              />
+            </a>
+          </figure>
+        </section>
+        <section class="journal-section">
+          <h3>JOURNAL</h3>
+          <figure class="project-card">
+            <h4>Title of project</h4>
+            <p>Details</p>
+            <a href="...">
+              <img
+                class="open-icon"
+                src="./images/open_icon-icons.com_72303.png"
+                alt="Site"
+              />
+            </a>
+          </figure>
+        </section>
       </main>
-    </section>
-    <footer></footer>
+    </main>
   </body>
 </html>
